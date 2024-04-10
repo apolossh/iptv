@@ -1,0 +1,44 @@
+Modo simples:
+
+
+#EXTM3U
+
+#EXTINF:X tvg-id="site_dominio.com.br",Nome (canal, filme ou radio)
+Link do arquivo
+
+
+#EXTINF:0 tvg-id="globo.com.br",Rede Globo Brasil
+https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
+
+#EXTINF:1 tvg-id="sbt.com.br",SBT Brasil
+https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
+
+#EXTINF:2 tvg-id="itatiaia.com.br",FM ITATIAIA JF
+https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/playlist.m3u8
+
+----------------------------------------------------------------------------------------------------------
+
+arquivos com audio e video separados:
+
+#EXTINF:2 tvg-id="animalplanet.com.br",Animal Planet
+Video://https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/
+Audio://https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/
+
+----------------------------------------------------------------------------------------------------------
+
+Modo avançado:
+
+#EXTINF:X tvg-logo="IMAGEM_ONLINE_do_FILME_ou_RADIO_ou_CANAL " group-title="Nome_do_menu_principal", Nome_do_canal,musica_ou_filme
+Link do arquivo
+
+
+
+
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1732200266592563200/5T5E_MeH_400x400.png" group-title="Avatar - A Lenda de Korra - Livro 1 Ar", Capitulos 1 - Bem_Vindo_a_Cidade_Republica
+https://ia600206.us.archive.org/19/items/beta_20240403/out_2024-04-03-16-37-41.mp4
+
+
+
+
