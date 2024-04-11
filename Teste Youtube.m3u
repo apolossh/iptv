@@ -19,7 +19,7 @@ https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/playlist.m3u8
 #EXTINF:3 tvg-logo="https://w7.pngwing.com/pngs/426/62/png-transparent-tv-globo-de-sao-paulo-ltda-rede-globo-television-grupo-globo-globonews-robocop-miscellaneous-television-heroes.png" group-title="Canal Filmes", Canal Filmes
 https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 
-#EXTINF:4 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/86600ed6f09e4bf48be4e55a0cd01536.webp " group-title=Record News", Record News
+#EXTINF:4 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/b/b1/Logotipo_da_Record_News.png " group-title=Record News", Record News
 https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
 
 ----------------------------------------------------------------------------------------------------------
