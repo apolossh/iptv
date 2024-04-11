@@ -19,6 +19,9 @@ https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/playlist.m3u8
 #EXTINF:3 tvg-logo="https://w7.pngwing.com/pngs/426/62/png-transparent-tv-globo-de-sao-paulo-ltda-rede-globo-television-grupo-globo-globonews-robocop-miscellaneous-television-heroes.png" group-title="Canal Filmes", Canal Filmes
 https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 
+#EXTINF:4 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/86600ed6f09e4bf48be4e55a0cd01536.webp " group-title=Record News", Record News
+https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
+
 ----------------------------------------------------------------------------------------------------------
 
 arquivos com audio e video separados:
@@ -31,7 +34,7 @@ Audio://https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/
 
 Modo avançado:
 
-#EXTINF:X tvg-logo="IMAGEM_ONLINE_do_FILME_ou_RADIO_ou_CANAL " group-title="Nome_do_menu_principal", Nome_do_canal,musica_ou_filme
+#EXTINF:X tvg-logo="IMAGEM " group-title="Nome_do_menu_principal", Nome_do_canal
 Link do arquivo
 
 
@@ -41,7 +44,4 @@ Link do arquivo
 
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1732200266592563200/5T5E_MeH_400x400.png" group-title="Avatar - A Lenda de Korra - Livro 1 Ar", Capitulos 1 - Bem_Vindo_a_Cidade_Republica
 https://ia600206.us.archive.org/19/items/beta_20240403/out_2024-04-03-16-37-41.mp4
-
-
-
 
