@@ -3,7 +3,7 @@
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/4/41/Logotipo_do_SBT.svg/1024px-Logotipo_do_SBT.svg.png",SBT Brasil
 https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 
-#EXTINF:1 tvg-id="itatiaia.com.br",FM ITATIAIA JF
+#EXTINF:1 tvg-id="FM",FM ITATIAIA JF
 https://5a57bda70564a.streamlock.net/itatiaia/itatiaia.stream/playlist.m3u8
 
 #EXTINF:2 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ22P8PVnZOo68IFqU3q0k1hzGXUnCdwwyeyhXMrRvOrgscMesBVRJo21M&s=10" group-title="Canal Filmes", Canal Filmes
