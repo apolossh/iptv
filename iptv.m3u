@@ -12,5 +12,8 @@ https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 #EXTINF:3 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzuevu5SRVf2152DgSKSTiEkwuWsEiC-PO1AecoOUGw&s" group-title=Record News", Record News
 https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
 
+#EXTINF:4 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzuevu5SRVf2152DgSKSTiEkwuWsEiC-PO1AecoOUGw&s" group-title=Record News", Record News
+https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
+
 ----------------------------------------------------------------------------------------------------------
 #EXTM3U
