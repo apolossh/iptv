@@ -1,8 +1,5 @@
 #EXTM3U
 
-#EXTINF:X tvg-id="site_dominio.com.br",Nome (canal, filme ou radio)
-Link do arquivo
-
 #EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/4/41/Logotipo_do_SBT.svg/1024px-Logotipo_do_SBT.svg.png",SBT Brasil
 https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 
@@ -16,12 +13,3 @@ https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
 
 ----------------------------------------------------------------------------------------------------------
-
-Modo avançado:
-
-#EXTINF:X tvg-logo="IMAGEM " group-title="Nome_do_menu_principal", Nome_do_canal
-Link do arquivo
-
-
-
-
