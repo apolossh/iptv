@@ -17,3 +17,6 @@ https://amg01391-addigital-jovempan-distrotv-tvd2e.amagi.tv/playlist/amg01391-ad
 
 #EXTINF:5 tvg-logo="https://www.glntv.com.br/admin/assets/img/users/8639-2023-01-02.png" group-title="GLN Tv",GLN Tv
 https://stmv1.paineltv.net/glnfilmes/glnfilmes/playlist.m3u8
+
+#EXTINF:6 tvg-id="xxx",xnxx
+https://cdn77-vid.xnxx-cdn.com/-GXU6q5Hu-pzhhDkAT-SWA==,1713486838/videos/hls/41/cc/ff/41ccffce94cd7a37207d933834d437d2/hls_low.m3u8
