@@ -1,1 +1,0 @@
-https://github.com/bitbar/test-samples/raw/refs/heads/master/apps/ios/bitbar-ios-sample.ipa
