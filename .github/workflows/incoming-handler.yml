@@ -1,0 +1,67 @@
+name: incoming-handler
+on:
+  push:
+    paths:
+      - 'incoming/**'
+
+jobs:
+  handle-oldest-incoming:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_FOR_ACTIONS }}  # use PAT so push works
+          ref: main                             # explicitly checkout main
+          fetch-depth: 0                        # full history for proper git push
+
+      - name: Find oldest incoming file
+        id: find
+        run: |
+          # List all incoming/*.txt files sorted by creation date
+          oldest_file=$(ls -1t incoming/*.txt 2>/dev/null | tail -n1)
+          if [ -z "$oldest_file" ]; then
+            echo "No incoming files found."
+            echo "file_to_process=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Processing oldest file: $oldest_file"
+          echo "file_to_process=$oldest_file" >> "$GITHUB_OUTPUT"
+
+      - name: Process oldest file
+        if: steps.find.outputs.file_to_process != ''
+        run: |
+          f="${{ steps.find.outputs.file_to_process }}"
+          uuid=$(basename "$f" .txt)
+          url=$(tr -d '\r' < "$f")
+          mkdir -p output
+          out="output/${uuid}-output.txt"
+          printf "%s\n" \
+            "----------------------------------" \
+            "IPA Processing Complete" \
+            "----------------------------------" \
+            "" \
+            "Original URL: ${url}" \
+            "UUID: ${uuid}" \
+            "Processed: $(date)" \
+            "" \
+            "----------------------------------" \
+            > "$out"
+          echo "Created $out"
+
+      - name: Upload output as artifact
+        if: steps.find.outputs.file_to_process != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: outputs
+          path: output/
+
+      - name: Delete processed file and push
+        if: steps.find.outputs.file_to_process != ''
+        run: |
+          f="${{ steps.find.outputs.file_to_process }}"
+          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git rm -f "$f"
+          git commit -m "Remove processed file $f" || echo "nothing to commit"
+          git push https://x-access-token:${{ secrets.PAT_FOR_ACTIONS }}@github.com/${{ github.repository }} main
