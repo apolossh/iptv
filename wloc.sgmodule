@@ -1,0 +1,14 @@
+#!name=Apple WLOC Modificacao de Localizacao
+#!desc=Modifica as coordenadas de retorno da localizacao de rede da Apple | Atalho (Recomendado): Definir localizacao https://www.icloud.com/shortcuts/a82717d8fdad4e6280866fcf911173f7 Limpar e restaurar localizacao https://www.icloud.com/shortcuts/f42632d406504f24a2cd163af4fe012f | Pagina de selecao de pontos: https://wloc-pages.pages.dev/
+#!author=Yu9191 Rewrite
+#!homepage=https://github.com/Yu9191/wloc
+#!category=Tools
+#!arguments=Longitude:113.94114, Latitude:22.544577, Precisao:25, Nivel_Log:info
+#!arguments-desc=Longitude/Latitude: Coordenadas padrao (prioridade apos selecao online e salvamento)\nPrecisao: Precisao do GPS (metros)\nNivel_Log: off/error/warn/info/debug/all\n\nModo de uso: Abra a pagina de selecao de pontos -> Escolha o local -> Salvar no dispositivo
+
+[Script]
+Apple WLOC = type=http-response, pattern="^https?:\/\/gs-loc(-cn)?\.apple\.com\/clls\/wloc", requires-body=1, binary-body-mode=1, max-size=0, timeout=30, script-path=https://raw.githubusercontent.com/apolossh/iptv/refs/heads/main/wloc.js, argument=longitude={{{Longitude}}}&latitude={{{Latitude}}}&accuracy={{{Precisao}}}&logLevel={{{Nivel_Log}}}
+WLOC Settings = type=http-request, pattern="^https?:\/\/gs-loc(-cn)?\.apple\.com\/wloc-settings\/save", requires-body=0, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/apolossh/iptv/refs/heads/main/wloc-settings.js
+
+[MITM]
+hostname = %APPEND% gs-loc.apple.com, gs-loc-cn.apple.com
